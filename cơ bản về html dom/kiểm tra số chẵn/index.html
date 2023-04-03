@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>Nhập số:</h2><br>
+    <input type="number" id="so">
+    <button type="button" onclick="check()">Kiểm tra</button>
+    <script>
+        function check() {
+                let number = document.getElementById("so").value;
+                if (number % 2 === 0) {
+                    document.getElementById("ketQua").innerHTML = number + " là số chẵn";
+                    // alert(`${number} là số chẵn`);
+                } else {
+                    document.getElementById("ketQua").innerHTML = `${number} là một số lẻ`;
+                    // alert(`${number} là số lẻ`);
+                }
+            }
+    </script>
+    <div id="ketQua"></div>
+</body>
+</html>
